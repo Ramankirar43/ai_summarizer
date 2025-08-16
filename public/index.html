@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Summarizer</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/main.js"></script>
+  <script defer src="/env-hint.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div class="container">
+  <h1>AI Meeting Notes Summarizer and Sharer </h1>
+
+  <div class="row row-2">
+    <div class="col">
+      <label>Transcript (paste text)</label>
+      <textarea id="transcript" placeholder="Paste your meeting transcript here..."></textarea>
+      <div class="muted">Or upload a .txt file below:</div>
+      <input type="file" id="fileInput" accept=".txt" />
+    </div>
+    <div class="col">
+      <label>Instruction / Prompt</label>
+      <input id="prompt" type="text" placeholder="e.g., Summarize in bullet points for executives" />
+      <button id="summarizeBtn" class="btn">Generate Summary</button>
+      <div id="status"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label>Generated Summary (editable)</label>
+      <textarea id="summary" placeholder="Your summary will appear here and can be edited..."></textarea>
+    </div>
+  </div>
+
+  <div class="row row-2">
+    <div class="col">
+      <label>Recipients (comma-separated emails)</label>
+      <input id="recipients" type="text" placeholder="alice@example.com, bob@example.com" />
+    </div>
+    <div class="col">
+      <label>Email Subject</label>
+      <input id="subject" type="text" value="Meeting Summary" />
+    </div>
+  </div>
+
+  <div class="row">
+    <button id="sendBtn" class="btn">Send Summary via Email</button>
+  </div>
+
+  </div>
+
+</body>
+</html>
+

@@ -21,7 +21,9 @@ Quickstart
 
    npm run dev
 
-Open http://localhost:3000
+Live Link->   https://ramankirar-ai-summarizer.onrender.com
+
+add prompts like : "Read the following meeting transcript and generate a concise summary. Include the main discussion points, decisions made, action items, responsible persons, and any deadlines mentioned. Keep it clear, structured, and easy to understand." to get better responses.
 
 Features
 
